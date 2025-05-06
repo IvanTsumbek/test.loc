@@ -14,3 +14,4 @@ $db= new Db($db_config);
 // dd($db2);
 
 require CORE . '/router.php';
+6;
