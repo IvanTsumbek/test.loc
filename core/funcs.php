@@ -7,6 +7,13 @@ function dump($data)
     echo "</pre>";
 }
 
+function print_arr($data)
+{
+    echo "<pre>";
+    print_r($data);
+    echo "</pre>";
+}
+
 function dd($data)
 {
     dump($data);
@@ -41,11 +48,11 @@ function h($str){
 function redirect($url='')
 {
     if ($url) {
-    $redirect=$url;
-} else
+        $redirect=$url;
+} else 
 {
-    $redirect=isset($_SERVER['HTTP_REFERER']) ? $_SERVER['HTTP_REFERER'] : PATH;
-}
-header("Location: {$redirect}");
-die;
+        $redirect=isset($_SERVER['HTTP_REFERER']) ? $_SERVER['HTTP_REFERER'] : PATH;
+    }
+    header("Location: {$redirect}");
+    die;
 }
