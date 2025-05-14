@@ -1,4 +1,5 @@
 <?php
+global $db;
 
 $title = 'My Blog :: About';
 
