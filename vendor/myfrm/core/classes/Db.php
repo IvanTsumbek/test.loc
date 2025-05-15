@@ -63,4 +63,9 @@ public static function getInstance(){
         return $res;
     }
 
+    public function rowCount()
+    {
+        return $this->stmt->rowCount();
+    }
+
 }
