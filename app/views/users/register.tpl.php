@@ -8,7 +8,7 @@
 
                 <h3>Register page</h3>
 
-                <form action="" method="post" enctype="multipart/form-data">
+                <form action="" method="post">
 
                     <div class="mb-3">
                         <label for="name" class="form-label">Name</label>
@@ -27,13 +27,6 @@
                         <input name="password" type="password" class="form-control" id="password" placeholder="Password" value='<?= old('password') ?>'>
                         <?= isset($validation) ? $validation->listErrors('password') : ''  ?>
                     </div>
-
-                    <div class="mb-3">
-                        <label for="avatar" class="form-label">Avatar</label>
-                        <input name="avatar" class="form-control" type="file" id="avatar">
-                        <?= isset($validation) ? $validation->listErrors('avatar') : ''  ?>
-                    </div>
-
 
                     <div class="mb-3">
                         <button type="submit" class="btn btn-primary">Register</button>
